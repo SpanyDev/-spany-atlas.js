@@ -1,6 +1,6 @@
 {
   "name": "@spany/atlas.js",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "A module that has multiple functions and will make your work easier.",
   "main": "index.js",
   "scripts": {
@@ -25,6 +25,10 @@
   },
   "homepage": "https://github.com/SpanyDev/atlas.js/#readme",
   "dependencies": {
-    "child_process": "^1.0.2"
+    "axios": "^1.7.2",
+    "chalk": "^4.1.2",
+    "child_process": "^1.0.2",
+    "http": "^0.0.1-security",
+    "https": "^1.0.0"
   }
 }
