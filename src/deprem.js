@@ -11,18 +11,41 @@ async function sonDepremler(numberOfEarthquakes) {
 
         const translatedDepremler = depremler.map(deprem => {
             return {
-                "Deprem ID": deprem.id,
-                "Tarih": deprem.date,
-                "Büyüklük": deprem.mag,
-                "Derinlik": deprem.depth,
-                "Konum": deprem.title,
-                "En Yakın Şehir": deprem.location_properties.closestCity.name,
-                "En Yakın Şehire Mesafe (km)": (deprem.location_properties.closestCity.distance / 1000).toFixed(2),
-                "En Yakın Şehir Nüfusu": deprem.location_properties.closestCity.population,
-                "Merkez Üssü": deprem.location_properties.epiCenter.name,
-                "Merkez Üssü Nüfusu": deprem.location_properties.epiCenter.population,
-                "Koordinatlar": deprem.geojson.coordinates,
-                "geoJson": deprem.geojson,
+                "id": deprem._id,
+                "date": deprem.date,
+                "mag": deprem.mag,
+                "depth": deprem.depth,
+                "title": deprem.title,
+                "location_properties": {
+                    "closestCity": {
+                        "name": deprem.location_properties.closestCity.name,
+                        "distance": deprem.location_properties.closestCity.distance,
+                        "population": deprem.location_properties.closestCity.population,
+                    },
+                    "epiCenter": {
+                        "name": deprem.location_properties.epiCenter.name,
+                        "cityCode": deprem.location_properties.epiCenter.distance,
+                        "population": deprem.location_properties.epiCenter.population,
+                    },
+                    "closestCities": deprem.location_properties.closestCities.map(city => {
+                        return {
+                            "name": city.name,
+                            "distance": city.distance,
+                            "population": city.population,
+                        };
+                    }),
+                    "airports": deprem.location_properties.airports.map(airport => {
+                        return {
+                            "name": airport.name,
+                            "distance": airport.distance,
+                        };
+                    }),
+                    "geoJson": {
+                        "type": deprem.location_properties.geoJson.type,
+                        "coordinates": deprem.location_properties.geoJson.coordinates
+                    },
+                },
+                
             };
         });
 

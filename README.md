@@ -14,7 +14,7 @@
 - You can easily use and benefit from many functions in this module.
 - This module provides you with convenience.
 
-## What's new in 0.3.2?
+## What's new in 0.3.3?
 - **1 New functions added.**
 - Function: **Depremler**
 
