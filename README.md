@@ -15,4 +15,47 @@
 - This module provides you with convenience.
 
 ## What's new in 0.2.0?
-<span style="color: red;">Test.</span>
+- **3 New functions added.**
+- Function: **isValidHexColor**
+- Function: **isImageUrl**
+- Function: **checkUpdate**
+
+# 🔧 Installation
+- You can download `@spany/atlas.js` in powershell with this code.
+```js
+npm install @spany/atlas.js
+```
+
+# 🧱 Basic Usage
+Add the following "checkUpdate" function to your bot to be notified instantly about the innovations in the module.
+
+## 🛠️ Check Update
+- Code: 
+```js
+const { checkUpdate } = require("@spany/atlas.js")
+
+client.on("ready", async() => {
+   await checkUpdate()
+})
+```
+- Result if the module is out of date (Automatically logs to the console.):
+```shell
+@spany/atlas.js is out of date!
+Remember to use "npm update @spany/atlas.js" ( version -> latest version )
+```
+
+# Features
+```js
+const Atlas = require('@spany/atlas.js');
+
+// Example: isValidHexColor
+Atlas.isValidHexColor("#fbb11b") // True
+Atlas.isValidHexColor("123456") // False
+
+// Example: isImageUrl
+Atlas.isImageUrl("İmageUrl") // True
+Atlas.isImageUrl("Hi!") // False
+
+const imageUrl = Atlas.isImageUrl("İmageUrl")
+console.log(imageUrl) // True or False
+```
