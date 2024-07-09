@@ -1,0 +1,27 @@
+{
+  "name": "@spany/atlas.js",
+  "version": "0.0.1",
+  "description": "A module that has multiple functions and will make your work easier.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SpanyDev/atlas.js.git"
+  },
+  "keywords": [
+    "hex-color",
+    "discord",
+    "javascript"
+  ],
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "author": "spany",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SpanyDev/atlas.js/issues"
+  },
+  "homepage": "https://github.com/SpanyDev/atlas.js/#readme"
+}
