@@ -45,7 +45,7 @@ async function sonDepremler(numberOfEarthquakes) {
                         "coordinates": deprem.location_properties.geoJson.coordinates
                     },
                 },
-                
+
             };
         });
 
