@@ -1,6 +1,6 @@
 {
   "name": "@spany/atlas.js",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "A module that has multiple functions and will make your work easier.",
   "main": "index.js",
   "scripts": {
@@ -11,9 +11,14 @@
     "url": "git+https://github.com/SpanyDev/atlas.js.git"
   },
   "keywords": [
-    "hex-color",
+    "isValidHexColor",
+    "isImageUrl",
+    "checkUpdate",
+    "image",
+    "color",
     "discord",
-    "javascript"
+    "javascript",
+    ""
   ],
   "engines": {
     "node": ">=14.0.0"

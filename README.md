@@ -14,7 +14,7 @@
 - You can easily use and benefit from many functions in this module.
 - This module provides you with convenience.
 
-## What's new in 0.2.1?
+## What's new in 0.3.0?
 - **3 New functions added.**
 - Function: **isValidHexColor**
 - Function: **isImageUrl**
