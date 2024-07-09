@@ -1,12 +1,11 @@
-# @spany/atlas.js
-
-![npm](https://img.shields.io/npm/v/@spany/atlas.js)
-![npm](https://img.shields.io/npm/dt/@spany/atlas.js)
-![NPM](https://img.shields.io/npm/l/@spany/atlas.js)
-
-Node.js için çeşitli yardımcı fonksiyonlar sunan bir modül.
-
-## Kurulum
-
-```bash
-npm install @spany/atlas.js
+<div align="center">
+<p>
+   <a href="https://nodei.co/npm/mzrdjs/"><img src="https://nodei.co/npm/mzrdjs.png?downloads=true&stars=true" alt="NPM info" /></a>
+ </p>
+<p>
+    <a href="https://www.npmjs.com/package/@spany/atlas.js"><img src="https://img.shields.io/npm/dt/@spany/atlas.js.svg?style=flat-square" alt="Download" /></a>
+    <a href="https://www.npmjs.com/package/@spany/atlas.js"><img src="https://img.shields.io/npm/dw/@spany/atlas.js.svg?style=flat-square" alt="Download" /></a>
+    <a href="https://www.npmjs.com/package/@spany/atlas.js"><img src="https://img.shields.io/npm/dm/@spany/atlas.js.svg?style=flat-square" alt="Download" /></a>
+    <a href="https://www.npmjs.com/package/@spany/atlas.js"><img src="https://img.shields.io/npm/l/@spany/atlas.js.svg?style=flat-square" alt="License" /></a>
+ </p>
+</div>
