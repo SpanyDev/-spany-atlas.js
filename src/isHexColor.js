@@ -3,6 +3,4 @@ function isValidHexColor(hex) {
   return hexPattern.test(hex);
 }
 
-module.exports = {
-  isValidHexColor,
-};
+module.exports = { isValidHexColor };

@@ -19,3 +19,5 @@ async function checkUpdate() {
     } else return;
   } else return;
 }
+
+module.exports = { checkUpdate };
