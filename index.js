@@ -1,5 +1,7 @@
-const { isValidHexColor } = require('./src/isValidHexColor');
+const { isValidHexColor } = require("./src/isHexColor");
+const { checkUpdate } = require("./src/checkUpdate");
 
 module.exports = {
-    isValidHexColor
-  };
+  isValidHexColor,
+  checkUpdate,
+};
