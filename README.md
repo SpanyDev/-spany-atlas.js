@@ -14,11 +14,9 @@
 - You can easily use and benefit from many functions in this module.
 - This module provides you with convenience.
 
-## What's new in 0.3.0?
-- **3 New functions added.**
-- Function: **isValidHexColor**
-- Function: **isImageUrl**
-- Function: **checkUpdate**
+## What's new in 0.3.1?
+- **1 New functions added.**
+- Function: **Depremler**
 
 # 🔧 Installation
 - You can download `@spany/atlas.js` in powershell with this code.
@@ -58,4 +56,8 @@ Atlas.isImageUrl("Hi!") // False
 
 const imageUrl = Atlas.isImageUrl("İmageUrl")
 console.log(imageUrl) // True or False
+
+// Example: Depremler/Erathquake
+const depremler = Atlas.sonDepremler(3)
+console.log(depremler) 
 ```
