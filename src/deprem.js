@@ -1,10 +1,12 @@
 const axios = require('axios');
 
+
 async function sonDepremler(numberOfEarthquakes) {
     try {
-        const response = await axios.get('https://api.orhanaydogdu.com.tr/deprem/kandilli/live');
-        if (isNaN(sonDepremler)) throw new Error('sonDepremler parametresi sayı olmalıdır!');
+        if (isNaN(numberOfEarthquakes)) throw new Error('sonDepremler parametresi sayı olmalıdır!');
         if (numberOfEarthquakes < 1) throw new Error('sonDepremler parametresi 1\'den küçük olamaz!');
+
+        const response = await axios.get('https://api.orhanaydogdu.com.tr/deprem/kandilli/live');
         if (numberOfEarthquakes > response.data.result.length) throw new Error('API\'dan dönen deprem sayısından fazla bir değer girdiniz!');
 
         const depremler = response.data.result.slice(0, numberOfEarthquakes);
@@ -24,7 +26,7 @@ async function sonDepremler(numberOfEarthquakes) {
                     },
                     "epiCenter": {
                         "name": deprem.location_properties.epiCenter.name,
-                        "cityCode": deprem.location_properties.epiCenter.distance,
+                        "cityCode": deprem.location_properties.epiCenter.cityCode, // Bu kısım düzeltildi
                         "population": deprem.location_properties.epiCenter.population,
                     },
                     "closestCities": deprem.location_properties.closestCities.map(city => {
@@ -40,12 +42,11 @@ async function sonDepremler(numberOfEarthquakes) {
                             "distance": airport.distance,
                         };
                     }),
-                    "geoJson": {
-                        "type": deprem.location_properties.geoJson.type,
-                        "coordinates": deprem.location_properties.geoJson.coordinates
-                    },
                 },
-
+                "geojson": {
+                    "type": deprem.geojson.type,
+                    "coordinates": deprem.geojson.coordinates
+                },
             };
         });
 

@@ -1,6 +1,6 @@
 {
   "name": "@spany/atlas.js",
-  "version": "0.3.4",
+  "version": "0.3.6",
   "description": "A module that has multiple functions and will make your work easier.",
   "main": "index.js",
   "scripts": {
@@ -19,7 +19,9 @@
     "discord",
     "javascript",
     "deprem",
-    "earthquake"
+    "earthquake",
+    "tdk",
+    "sözlük"
   ],
   "engines": {
     "node": ">=14.0.0"

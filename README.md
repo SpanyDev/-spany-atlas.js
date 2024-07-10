@@ -14,9 +14,9 @@
 - You can easily use and benefit from many functions in this module.
 - This module provides you with convenience.
 
-## What's new in 0.3.4?
-- **1 New functions added.**
-- Function: **Depremler**
+## What's new in 0.3.6?
+- **Bug Fixed**
+- **New Function:** tdk
 
 # 🔧 Installation
 - You can download `@spany/atlas.js` in powershell with this code.
@@ -57,7 +57,11 @@ Atlas.isImageUrl("Hi!") // False
 const imageUrl = Atlas.isImageUrl("İmageUrl")
 console.log(imageUrl) // True or False
 
-// Example: Depremler/Erathquake
+// Example: Depremler/Earthquake
 const depremler = Atlas.sonDepremler(3)
 console.log(depremler) 
+
+// Example: tdk
+const tdk = Atlas.tdk(kelime)
+console.log(tdk)
 ```
